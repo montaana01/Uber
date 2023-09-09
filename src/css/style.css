@@ -200,9 +200,10 @@ nav {
     text-transform: uppercase;
 }
 .reasons .advantage_block {
-    margin-top: 16px;
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
     max-height: 150px;
 }
 
@@ -210,27 +211,19 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto 0;
-    background-color: #1EACC7;
+    margin-right: 26px;
     width: 113px;
     height: 113px;
+    background-color: #1eacc7;
     border-radius: 100%;
 }
 
 .reasons .advantage_descr {
-    margin-left: 25px;
     color: #202020;
     font-size: 15px;
     font-weight: 300;
     line-height: 21px;
-}
-
-.left{
-    max-width: 370px;
-}
-
-.right{
-    max-width: 340px;
+    width: 343px;
 }
 
 .reasons .advantage_descr span {
@@ -239,16 +232,17 @@ nav {
     font-style: normal;
     font-weight: 400;
     line-height: 21px; /* 123.529% */
+    width: 343px;
 }
 
 .mobile_app {
-    min-height: 861px;
+    min-height: 864px;
     background: url(../img/bg/mobile_bg.png) center center/cover no-repeat;
     padding-top: 48px;
 }
 
-.possibilities{
-    margin: 48px auto 0 auto;
+.mobile_app .possibilities{
+    margin: 0 auto;
     width: 113px;
     height: 24px;
     flex-shrink: 0;
@@ -260,4 +254,26 @@ nav {
     font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
+}
+.mobile_app .app_descr {
+    margin-top: 43px;
+    color: #222;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px; /* 126.316% */
+    text-transform: uppercase;
+}
+
+.mobile_app .app_subtitle {
+    margin-top: 19px;
+    color: #222;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
 }
