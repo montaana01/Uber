@@ -1,26 +1,21 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+
+body {
+    position: relative;
+}
+
 header {
     position: relative;
+    margin-top: 50px;
 }
 
 #navbar{
 overflow: hidden;
-}
-
-.content {
-    padding: 50px;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.sticky + .content {
-    padding-top: 60px;
+position: fixed;
+top: 0;
+width: 100%;
 }
 
 nav {
@@ -249,10 +244,10 @@ nav {
 .mobile_app {
     min-height: 861px;
     background: url(../img/bg/mobile_bg.png) center center/cover no-repeat;
+    padding-top: 48px;
 }
 
 .possibilities{
-    display: block;
     margin: 48px auto 0 auto;
     width: 113px;
     height: 24px;
