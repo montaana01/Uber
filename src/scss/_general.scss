@@ -41,6 +41,10 @@ nav {
     &_item {
         padding-right: 40px;
         border-right: 2px dotted #000;
+
+        &:last-child {
+            border-right: none;
+        }
     }
 }
 
@@ -134,7 +138,7 @@ nav {
         text-transform: uppercase;
     }
 
-    &_desription {
+    &_description {
         margin: 0;
         margin-top: 23px;
         color: #FFF;

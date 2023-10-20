@@ -1,0 +1,31 @@
+@media (max-width: 1200px) {
+    .menu {
+        &_item {
+            padding-right: 20px;
+        }
+
+        &_link {
+            font-size: 13px;
+        }
+    }
+
+    .partners {
+        &_title {
+            font-size: 50px;
+        }
+
+        &_description {
+            font-size: 30px;
+        }
+    }
+
+    .reasons {
+        .advantage_block {
+            align-items: flex-start;
+        }
+
+        .advantage_descr {
+            width: 300px;
+        }
+    }
+}
