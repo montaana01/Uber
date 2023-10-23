@@ -12,9 +12,9 @@ header {
     z-index: 3;
 }
 
-nav {
-    height: 50px;
-    background-color: $black;
+
+.hamburger {
+    display: none;
 }
 
 .menu {
@@ -65,8 +65,8 @@ nav {
         max-width: 100%;
         margin-top: 16px;
 
-        .uber_logo {
-            width: 285px;
+        img {
+            width: 100%;
         }
     }
 
@@ -630,8 +630,17 @@ footer {
     }
 
     &_mobile {
+
+        img {
+            width: 94px;
+        }
+
         a {
             text-decoration: none;
         }
     }
+}
+
+.xs-visible {
+    display: none;
 }

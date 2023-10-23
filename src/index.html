@@ -20,7 +20,7 @@
   <header>
     <nav id="navbar">
       <div class="container">
-        <ul class="menu">
+        <ul class="menu menu_active">
           <li class="menu_item">
             <a href="#" class="menu_link">Главная</a>
           </li>
@@ -41,24 +41,32 @@
           </li>
         </ul>
       </div>
+      <div class="hamburger hamburger_active">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
 
     <div class="subheader">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 offset-md-1">
-            <a href="#" class="subheader_logo"><img class="uber_logo" src="/src/icons/Uber_icon.png" alt="logo" /></a>
+          <div class="col-6 col-md-4 offset-md-1">
+            <a href="#" class="subheader_logo">
+              <img src="/src/icons/Uber_icon.png" alt="logo" />
+            </a>
             <div class="subheader_official">
               Официальный партнер Uber в Москве
             </div>
           </div>
 
-          <div class="col-md-3 offset-md-1 col-xl-2 offset-xl-2">
+          <div class="xs-hidden col-md-3 offset-md-1 col-xl-2 offset-xl-2">
             <div class="subheader_call">Звоните нам ежедневно</div>
             <a href="tel:.84957970988" class="subheader_phone">8 495 797 09 88</a>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-6 col-md-3 col-lg-2">
+            <a href="tel:.84957970988" class="xs-visible subheader_phone">8 495 797 09 88</a>
             <button class="subheader_btn">
               <div class="btn_text">заказать звонок</div>
             </button>
@@ -71,7 +79,7 @@
   <section class="partners">
     <div class="container">
       <div class="row">
-        <div class="col-md-10 offset-md-1">
+        <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
           <h1 class="partners_title">КОМПАНИЯ UBER PARTNERS!</h1>
           <h2 class="partners_description">
             ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!
@@ -394,18 +402,19 @@
       <div>
         <div class="footer_mobile">
           <a href="#">
-            <img src="icons/footer/app_store.webp" alt="App Store">
+            <img src="icons/footer/app_store.svg" alt="Apple Store">
           </a>
           <a href="#">
-            <img src="icons/footer/google_play.webp" alt="Google Play">
+            <img src="icons/footer/google_play.svg" alt="Google Play">
           </a>
           <a href="#">
-            <img src="icons/footer/Windows_store.webp" alt="Windows Store">
+            <img src="icons/footer/Windows_store.svg" alt="Windows Store">
           </a>
         </div>
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
