@@ -31,7 +31,7 @@ header {
     }
 
     &_link {
-        color: #FFF;
+        color: $white;
         font-size: 15px;
         font-weight: 300;
         text-decoration: none;
@@ -73,14 +73,14 @@ header {
     &_official {
         margin-top: 6px;
         opacity: 0.5;
-        color: #FFF;
+        color: $white;
         font-size: 13px;
         font-weight: 100;
     }
 
     &_call {
         margin-top: 20px;
-        color: #FFF;
+        color: $white;
         text-align: right;
         font-size: 12px;
         line-height: 12px;
@@ -90,7 +90,7 @@ header {
     &_phone {
         display: block;
         margin-top: 8px;
-        color: #FFF;
+        color: $white;
         text-align: right;
         font-size: 22px;
         line-height: 22px;
@@ -110,7 +110,7 @@ header {
         @include btn_hover;
 
         .btn_text {
-            color: #FFF;
+            color: $white;
             text-align: center;
             text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
             font-size: 14px;
@@ -129,7 +129,7 @@ header {
     &_title {
         margin: 0;
         margin-top: 57px;
-        color: #FFF;
+        color: $white;
         text-align: center;
         font-size: 60px;
         font-style: normal;
@@ -141,7 +141,7 @@ header {
     &_description {
         margin: 0;
         margin-top: 23px;
-        color: #FFF;
+        color: $white;
         text-align: center;
         font-size: 36px;
         font-style: normal;
@@ -153,7 +153,7 @@ header {
     &_subtitle {
         margin: 0;
         margin-top: 26px;
-        color: #FFF;
+        color: $white;
         text-align: center;
         font-family: Roboto;
         font-size: 18px;
@@ -172,7 +172,7 @@ header {
         border: none;
         background-image: linear-gradient(0deg, $blue 0%, #4CE2FF 100%);
         box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.12) inset;
-        color: #FFF;
+        color: $white;
         text-align: center;
         text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
         font-size: 18px;
@@ -186,7 +186,7 @@ header {
 .reasons {
     min-height: 849px;
     padding: 20px 0 64px 0;
-    background-color: #FFF;
+    background-color: $white;
 }
 
 .label {
@@ -198,7 +198,7 @@ header {
     flex-shrink: 0;
     border: none;
     background-color: #000;
-    color: #FFF;
+    color: $white;
     text-align: center;
     font-size: 11px;
     font-weight: 400;
@@ -207,7 +207,7 @@ header {
     z-index: 2;
 
     &_white {
-        background: #FFF;
+        background: $white;
         color: #070716;
     }
 }
@@ -224,7 +224,7 @@ header {
     text-transform: uppercase;
 
     &_white {
-        color: #FFF;
+        color: $white;
     }
 }
 
@@ -240,7 +240,7 @@ header {
     background-color: none;
 
     &_white {
-        color: #FFF;
+        color: $white;
     }
 }
 
@@ -327,7 +327,7 @@ header {
         }
 
         &_subtitle {
-            color: #FFF;
+            color: $white;
             text-align: center;
             font-size: 24px;
             font-style: normal;
@@ -436,7 +436,7 @@ header {
         line-height: 22px;
 
         &_red {
-            color: #FF5656;
+            color: $pink;
         }
     }
 
@@ -510,7 +510,7 @@ header {
         text-decoration: none;
 
         &:hover {
-            color: #fff;
+            color: $white;
         }
     }
 }
@@ -571,7 +571,7 @@ footer {
             flex-shrink: 0;
 
             i {
-                color: #FFF;
+                color: $white;
             }
         }
     }
