@@ -462,7 +462,7 @@ header {
                 transform: translateY(-50%);
                 width: 21px;
                 height: 20px;
-                background: url('../icons/terms_icon/blue.png') center (center / cover) no-repeat;
+                background: url('../icon/terms_icon/blue.png') center (center / cover) no-repeat;
             }
         }
     }
@@ -482,7 +482,7 @@ header {
         .terms_list {
             li {
                 &::before {
-                    background: url('../icons/terms_icon/red.png') center (center / cover) no-repeat;
+                    background: url('../icon/terms_icon/red.png') center (center / cover) no-repeat;
                 }
             }
         }
