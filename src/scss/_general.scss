@@ -7,7 +7,7 @@ header {
     position: fixed;
     width: 100%;
     height: 50px;
-    background-color: $black;
+    background-color: $main_color;
     top: 0;
     z-index: 3;
 }
@@ -26,8 +26,9 @@ header {
     text-align: center;
 
     a {
+        transition: 0.5s all;
         &:hover {
-            color: $blue;
+            color: $icons;
         }
     }
 
@@ -40,7 +41,7 @@ header {
 
     &_item {
         padding-right: 40px;
-        border-right: 2px dotted #000;
+        border-right: 2px dotted #fff;
 
         &:last-child {
             border-right: none;
@@ -51,12 +52,13 @@ header {
 .subheader {
     position: absolute;
     width: 100%;
-    height: 87px;
-    background-color: rgba(0, 0, 0, 0.6);
+    height: 95px;
+    background-color: rgba($main_color, 0.8);
 
     a {
+        transition: 0.5s all;
         &:hover {
-            color: $blue;
+            color: $icons;
         }
     }
 
@@ -64,18 +66,22 @@ header {
         display: block;
         max-width: 100%;
         margin-top: 16px;
-
+        transition: 0.5s all;
         img {
-            width: 100%;
+            height: 36px;
         }
+    }
+    &_logo:hover{
+        scale: 1.01;
     }
 
     &_official {
         margin-top: 6px;
-        opacity: 0.5;
+        opacity: 0.9;
         color: #FFF;
-        font-size: 13px;
-        font-weight: 100;
+        font-size: 15px;
+        line-height: 16px;
+        font-weight: 200;
     }
 
     &_call {
@@ -105,14 +111,14 @@ header {
         flex-shrink: 0;
         border-radius: 4px;
         border: none;
-        background-image: linear-gradient(0deg, $blue 0%, #4CE2FF 100%);
+        background-image: linear-gradient(0deg, $main_color 0%, $icons 100%);
         box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.12) inset;
         @include btn_hover;
 
         .btn_text {
             color: #FFF;
             text-align: center;
-            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
             font-size: 14px;
             font-weight: 400;
             line-height: 14px;
@@ -123,7 +129,7 @@ header {
 
 .partners {
     min-height: 790px;
-    background: url(../img/bg/uber_bg.jpg) center (center / cover) no-repeat;
+    background: url(../public/img/bg/main_bg.png) center (center / cover) no-repeat;
     padding: 150px 0 135px 0;
 
     &_title {
@@ -170,11 +176,11 @@ header {
         flex-shrink: 0;
         border-radius: 4px;
         border: none;
-        background-image: linear-gradient(0deg, $blue 0%, #4CE2FF 100%);
+        background-image: linear-gradient(0deg, $main_color 0%, $icons 100%);
         box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.12) inset;
         color: #FFF;
         text-align: center;
-        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -220,7 +226,6 @@ header {
     font-size: 38px;
     line-height: 38px;
     font-weight: 700;
-    line-height: 38px;
     text-transform: uppercase;
 
     &_white {
@@ -237,7 +242,6 @@ header {
     line-height: 17px;
     font-style: normal;
     font-weight: 400;
-    background-color: none;
 
     &_white {
         color: #FFF;
@@ -260,7 +264,7 @@ header {
         margin-right: 26px;
         width: 113px;
         height: 113px;
-        background-color: $blue;
+        background-color: $icons;
         border-radius: 100%;
     }
 
@@ -272,7 +276,7 @@ header {
         width: 343px;
 
         span {
-            color: $blue;
+            color: $icons;
             font-size: 17px;
             font-style: normal;
             font-weight: 400;
@@ -285,7 +289,7 @@ header {
 .mobile {
     min-height: 864px;
     padding: 48px 0 79px 0;
-    background: url(../img/bg/mobile_bg.png) center (center / cover) no-repeat;
+    background: url(../public/img/bg/mobile_bg.png) center (center / cover) no-repeat;
 
     .row {
         margin-top: 30px;
@@ -303,27 +307,27 @@ header {
         padding-top: 85px;
 
         &_1 {
-            background: url(../img/mobile_bg/card_1.jpg) center (center / cover) no-repeat;
+            background: url(../public/img/mobile_bg/card_1.jpg) center (center / cover) no-repeat;
         }
 
         &_2 {
-            background: url(../img/mobile_bg/card_2.jpg) center (center / cover) no-repeat;
+            background: url(../public/img/mobile_bg/card_2.jpg) center (center / cover) no-repeat;
         }
 
         &_3 {
-            background: url(../img/mobile_bg/card_3.jpg) center (center / cover) no-repeat;
+            background: url(../public/img/mobile_bg/card_3.jpg) center (center / cover) no-repeat;
         }
 
         &_4 {
-            background: url(../img/mobile_bg/card_4.jpg) center (center / cover) no-repeat;
+            background: url(../public/img/mobile_bg/card_4.jpg) center (center / cover) no-repeat;
         }
 
         &_5 {
-            background: url(../img/mobile_bg/card_5.jpg) center (center / cover) no-repeat;
+            background: url(../public/img/mobile_bg/card_5.jpg) center (center / cover) no-repeat;
         }
 
         &_6 {
-            background: url(../img/mobile_bg/card_6.jpg) center (center / cover) no-repeat;
+            background: url(../public/img/mobile_bg/card_6.jpg) center (center / cover) no-repeat;
         }
 
         &_subtitle {
@@ -353,14 +357,15 @@ header {
             background-color: #000;
             padding: 6px;
             cursor: pointer;
+            transition: 0.5s all;
 
             &:before {
                 content: '';
                 display: block;
                 width: 14px;
                 height: 2px;
-                background-color: $blue;
-                transition: 0.3s all;
+                background-color: $icons;
+                transition: 0.5s all;
             }
 
             &:after {
@@ -371,8 +376,8 @@ header {
                 display: block;
                 width: 2px;
                 height: 14px;
-                background-color: $blue;
-                transition: 0.3s all;
+                background-color: $icons;
+                transition: 0.5s all;
             }
 
             &:hover {
@@ -390,7 +395,7 @@ header {
     position: relative;
     padding: 59px 0 137px 0;
     min-height: 898px;
-    background: url(../img/bg/car_bg.png) center (center / auto 50%) repeat;
+    background: url(../public/img/bg/car_bg.png) center (center / auto 50%) repeat;
 
     .black {
         position: absolute;
@@ -424,7 +429,7 @@ header {
         margin: 33px 0;
 
         &_nmb {
-            margin-bottom: 0px;
+            margin-bottom: 0;
         }
     }
 
@@ -462,7 +467,7 @@ header {
                 transform: translateY(-50%);
                 width: 21px;
                 height: 20px;
-                background: url('../icon/terms_icon/blue.png') center (center / cover) no-repeat;
+                background: url('../public/img/terms_icon/blue.png') center (center / cover) no-repeat;
             }
         }
     }
@@ -482,7 +487,7 @@ header {
         .terms_list {
             li {
                 &::before {
-                    background: url('../icon/terms_icon/red.png') center (center / cover) no-repeat;
+                    background: url('../public/img/terms_icon/red.png') center (center / cover) no-repeat;
                 }
             }
         }
@@ -493,7 +498,7 @@ header {
     position: relative;
     padding: 50px 0 50px 0;
     min-height: 720px;
-    background: url('../img/bg/world_bg.png') center (center / auto 100%) no-repeat;
+    background: url('../public/img/bg/world_bg.png') center (center / auto 100%) no-repeat;
     background-color: #080810;
 
     &_link {
@@ -506,9 +511,9 @@ header {
         font-weight: 400;
         line-height: 68px;
         text-transform: uppercase;
-        color: $blue;
+        color: $icons;
         text-decoration: none;
-
+        transition: 0.5s all;
         &:hover {
             color: #fff;
         }
@@ -520,8 +525,9 @@ footer {
     padding: 14px 25px 40px 22px;
 
     a {
+        transition: 0.5s all;
         &:hover {
-            color: $blue;
+            color: $icons;
         }
     }
 }
@@ -531,7 +537,7 @@ footer {
         margin: 0 auto;
         width: 300px;
         height: 4px;
-        background-color: $blue;
+        background-color: $icons;
     }
 
     &_wrapper {
@@ -543,11 +549,6 @@ footer {
 
     &_wrapper>div {
         width: 33%;
-
-        &:nth-child(3) {
-            display: flex;
-            justify-content: flex-end;
-        }
     }
 
     &_social {
@@ -614,7 +615,7 @@ footer {
             display: flex;
             justify-content: center;
             text-decoration: none;
-            color: $blue;
+            color: $icons;
             margin-top: 18px;
             text-align: center;
             font-size: 11px;
@@ -622,7 +623,7 @@ footer {
             font-weight: 400;
             line-height: 11px;
             text-transform: uppercase;
-
+            transition: 0.5s all;
             &:hover {
                 color: $black;
             }
@@ -630,9 +631,12 @@ footer {
     }
 
     &_mobile {
+        display: flex;
+        justify-content: flex-end;
 
         img {
-            width: 94px;
+            height: 35px;
+            padding-left: 15px;
         }
 
         a {
